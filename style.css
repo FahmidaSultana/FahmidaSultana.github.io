@@ -1,0 +1,58 @@
+.head {
+font-size: 25px;
+overflow:hidden;
+}
+.head h1{
+	text-align: center;
+color: black;
+}
+.head h3{
+	text-align: center;
+	color: black; 
+}
+.calculator {
+	overflow: hidden;
+	position: absolute;
+	top:200px;
+	left: 300px;
+  width: 830px;
+  height:1800px;
+  padding: 50px;
+  margin: 20px;
+}
+ input{
+	
+	font-size:40px;
+}
+.btn{
+background-color:black;
+color:white;
+text-shadow: 2px 3px 5px black;
+border:none;
+padding:5px 10px;	
+ box-shadow:2px 3px 10px white;
+}
+.note p{
+font-size: 40px;
+color:black;
+border:none;
+padding:1px 5px;
+}
+.R p{
+font-size: 40px;
+	color:black;
+border:none;
+padding:1px 5px;
+}
+
+.footer {
+	position:absolute;
+	top:2150px;
+	width:1409px;
+	  padding: 100px; /* Some padding */
+	  text-align: center; /* Center text*/
+	 background-color:black; /* Grey background */
+	  font-size:20px;
+	   font-family: Arial, Helvetica, sans-serif;
+	  color:white;
+}

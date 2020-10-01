@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title> RSA Calculator</title>
+ <link rel="stylesheet" href="style.css" />
+ <script type="text/javascript" src="js.js"></script>
+ </head>
+<body>
+<div class = "head">
+<h1>RSA Calculator</h1>
+<h3>By </br>
+   Fahmida Sultana</br>
+   ID : 17701051</h3>
+</div>
+<!-- inputs p & q-->
+<div class ="calculator">
+<div class = "inputs">
+ <div class = "inp"><input type="text" name="p" id = "p" placeholder="Enter p" size="15"></div></br>
+ <div class ="inp"><input type="text" name="q" id = "q" placeholder="Enter q" size="15"></div></br>
+ <!-- button set p & q-->
+ <input class = "btn" type="button" value="SET p & q" onclick="multiply()"></br>
+ </div>
+ 
+ <div class = "note">
+ <p>p & q must be prime numbers</p></div></br>
+ <!-- n=p*q-->
+ <div class = "R"><p>n = p*q  = <span id = "n"></span></p></div></br>
+<!-- r = (p-1)*(q-1)-->
+<div class = "R">
+<p>So, r = (p-1)*(q-1) = <span id = "r"></span></p></div></br>
+<div class = "R"><p>Select e such that gcd(e,r) = 1</p></br>
+</div>
+ <!-- enter e-->
+<div class = "inp"><input type="text" name="p" id = "e" placeholder="Enter e" size="15"></div></br>
+ <!-- button for checking e-->
+<input type="button" class = "btn" value="Check e is relatively prime or not" onclick="checkE()"></br>
+<div class = "R">
+<p><span id = "m"></span></p></br>
+</div>
+ <!-- Generate D-->
+ <input type="button" class ="btn" value="generate d" onclick="generateD()"></br>
+ <div class = "R">
+	  <p>
+	 <span id = "d"></span></br>
+	 <span id = "no"></span></br>
+	 </p>
+ </div>
+  <!-- Enter a message-->
+ <div class ="inp"><input type="text" name="q" id = "msg" placeholder="Enter a letter" size="15"></div></br>
+ <input type="button" class = "btn" value="Encript" onclick="encrypt()"></br></br>
+ <input type="button" class = "btn" value="Decript" onclick="decrypt()"></br>
+ <div class = "R"><p> Cipher text : <span id = "demsg">
+ 
+ </span></p></div></br>
+  <!-- Decript cipher text-->
+ <div class = "R">
+ <p> Decrypt: 
+
+ <span id = "themsg">
+ </span></br>
+  </p></div>
+</div>
+<div class ="footer">
+<p class="crp">Footer</p>
+</div>
+</body>
+</html>
